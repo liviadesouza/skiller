@@ -1,0 +1,229 @@
+/*-------------
+ 	Geral
+-------------*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	font: normal 16px sans-serif;
+	color: #555;
+}
+
+body{
+	background-color: black;
+}
+
+/*-------------
+ 	Navegação
+-------------*/
+
+ul, nav{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+
+	opacity: 0.9;
+}
+
+a:hover{
+	opacity: 1;
+}
+
+a.btn{
+	color: #fff;
+	border-radius: 4px;
+	text-transform: uppercase;
+	background-color: black;
+	font-weight: 800;
+	text-align: center;
+}
+
+hr{
+	width: 150px;
+	height: 2px;
+	background-color: #ac1414;
+	border: 0;
+	margin-bottom: 80px;
+}
+
+section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding: 125px 100px;
+}
+
+@media (max-width: 1000px){
+
+	section{
+		padding: 100px 50px;
+	}
+
+}
+
+@media (max-width: 600px){
+
+	section{
+		padding: 80px 30px;
+	}
+}
+
+
+/*-------------
+ 	Cabeçalho
+-------------*/
+
+header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+	padding: 35px 100px 0;
+}
+
+header h2{
+	font-family: 'Quicksand', sans-serif;
+}
+
+header nav{
+	display: flex;
+}
+
+header nav li{
+	margin: 0 15px;
+}
+
+header nav li:first-child{
+	margin-left: 0;	
+}
+
+header nav li:last-child{
+	margin-right: 0;	
+}
+
+@media (max-width: 1000px){
+	header{
+		padding: 20px 50px;
+	}
+}
+
+
+@media (max-width: 700px){
+	header{
+		flex-direction: column;		
+	}
+
+	header h2{
+		margin-bottom: 15px;
+	}
+}
+
+
+section h3.title{
+	color: white;
+	text-transform: capitalize; 
+	font: bold 32px 'Open Sans', sans-serif;
+	margin-bottom: 35px;
+	text-align: center;
+}
+
+
+section p{
+	max-width: 800px;
+	text-align: center;
+	margin-bottom: 35px;
+	padding: 0 20px;
+	line-height: 2;
+	color: gainsboro;
+}
+
+ul.grid{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+
+/*-------------
+ 	Criadores
+-------------*/
+
+.testimonial-section{
+    background: #000000;
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .inner-width{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+  }
+  
+  .testimonial-section h1{
+    font-weight: 400;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: impact;
+    color: #ac1414;
+  }
+  
+  .testimonial-pics{
+    padding: 40px 0;
+  }
+  
+  .testimonial-pics img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 20px;
+    filter: grayscale(100%);
+    transition: .3s;
+    cursor: pointer;
+  }
+  
+  .testimonial-pics img:hover, .testimonial-pics img.active{
+    filter: none;
+  }
+  
+  
+  .testimonial-contents{
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .testimonial{
+    display: none;
+  }
+  
+  .testimonial.active{
+    display: block;
+  }
+  
+  .testimonial p{
+    color: #dddddd;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial .description{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 15px;
+    color: #ac1414;
+  }  

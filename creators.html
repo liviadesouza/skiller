@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Criadores</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+
+    
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/title.css">
+    <link rel="stylesheet" href="css/creators.css">
+  </head>
+  <body>
+
+    
+    <!-- Barra de Navegação e Cabeçalho -->
+
+	<header>
+		<h2><a href="#">SM</a></h2>
+		<nav>
+			<li><a href="index.html">Início</a></li>
+			<li><a href="https://serialminnd.tumblr.com/">Blog</a></li>
+			<li><a href="creators.html">Criadores</a></li>
+			<li><a href="index.html/#psico">Psicopatologia</a></li>
+			<li><a href="index.html/#news">Newsletter</a></li>
+		</nav>
+	</header>
+
+    <!-- Título -->
+
+	<section class="texto" style="background-color: #000000;">
+	<h1 id="desc" class="text middle" data-text="SERIAL MIND">SERIAL MIND</h1>
+    
+        
+    <!-- Criadores -->
+
+    <div class="testimonial-section">
+        <div class="inner-width">
+          <h1>Quem são os criadores?</h1>
+          <div class="testimonial-pics">
+            <img src="img/livia.jpg" alt="test-1" class="active">
+            <img src="img/ana.jpg" alt="test-2">
+            <img src="img/eric.jpg" alt="test-3">
+          </div>
+  
+          <div class="testimonial-contents">
+            <div class="testimonial active" id="test-1">
+              <p>Lívia programa há 3 anos</p>
+              <span class="description">19 Anos / Developer</span>
+            </div>
+  
+            <div class="testimonial" id="test-2">
+              <p>Ana Luísa programa há 3 meses.</p>
+              <span class="description">16 Anos / Co-Developer</span>
+            </div>
+  
+            <div class="testimonial" id="test-3">
+              <p>Eric programa há 3 meses.</p>
+              <span class="description">16 Anos / Co-Developer</span>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <script type="text/javascript">
+        $('.testimonial-pics img').click(function(){
+          $(".testimonial-pics img").removeClass("active");
+          $(this).addClass("active");
+  
+          $(".testimonial").removeClass("active");
+          $("#"+$(this).attr("alt")).addClass("active");
+        });
+      </script>
+
+  </body>
+</html>
